@@ -25,7 +25,11 @@
                 <br>
                 <div class="flex flex-col">
                     <label for="id_kelas" class="pb-1 font-bold">Kelas:</label>
-                    <input type="text" name="kelas" id="kelas" class="rounded-lg py-1 px-2">
+                    <select name="kelas_id" id="kelas_id" required>
+                        @foreach ($kelas as $kelasItem )
+                        <option value="{{ $kelasItem->id }}">{{ $kelasItem->nama_kelas }}</option>
+                        @endforeach      
+                    </select>
                 </div>
                 <br>
                 
