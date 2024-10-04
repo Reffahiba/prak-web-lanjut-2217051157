@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Create User</title>
-</head>
-<body class="bg-gradient-to-t from-blue-100 to-blue-300 flex justify-center items-center h-full">
+@extends('layouts.app')
+
+@section('content')
     <div class="flex items-center justify-center h-screen">
         <div class="bg-blue-200 rounded-xl shadow-lg p-7">
             <h1 class="font-bold text-center pb-5">Create User</h1>
@@ -37,5 +30,4 @@
             </form>
         </div>
     </div>
-</body>
-</html>
+@endsection
