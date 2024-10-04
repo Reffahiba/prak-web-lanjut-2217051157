@@ -9,11 +9,17 @@
                 <div class="flex flex-col">
                     <label for="nama" class="pb-1 font-bold">Nama:</label>
                     <input type="text" name="nama" id="nama" class="rounded-lg py-1 px-2">
+                    @foreach ($errors->get('nama') as $msg )
+                        <p class="text-red-600">{{ $msg }}</p>
+                    @endforeach
                 </div>
                 <br>
                 <div class="flex flex-col">
                     <label for="npm" class="pb-1 font-bold">NPM:</label>
                     <input type="text" name="npm" id="npm" class="rounded-lg py-1 px-2">
+                    @foreach ($errors->get('nama') as $msg )
+                        <p class="text-red-600">{{ $msg }}</p>
+                    @endforeach
                 </div>
                 <br>
                 <div class="flex flex-col">
