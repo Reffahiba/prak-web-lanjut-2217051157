@@ -22,7 +22,7 @@
                         <td class="border border-black px-3 py-2 text-left"><?= $user['nama']?></td>
                         <td class="border border-black px-3 py-2 text-left"><?= $user['npm']?></td>
                         <td class="border border-black px-3 py-2 text-left"><?= $user['nama_kelas']?></td>
-                        <td class="border border-black px-3 py-2 text-left"></td>
+                        <td class="border border-black px-3 py-2 text-left"><a href="{{ route('user.show', $user->id) }}" class="bg-green-400 p-1 text-md-center font-semibold">Detail</a></td>
                     </tr>
                 <?php
                 }

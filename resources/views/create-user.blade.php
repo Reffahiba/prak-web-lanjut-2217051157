@@ -25,6 +25,11 @@
                     </select>
                 </div>
                 <br>
+                <div class="flex flex-col">
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+                <br>
                 
                 <button type="submit" class="rounded-lg bg-green-400 px-2 py-1 font-bold">Submit</button>
             </form>
