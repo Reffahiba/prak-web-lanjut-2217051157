@@ -36,6 +36,16 @@
                     <input type="file" id="foto" name="foto">
                 </div>
                 <br>
+                <div class="flex flex-col">
+                    <label for="jurusan" class="pb-1 font-bold">Jurusan:</label>
+                    <input type="text" id="jurusan" name="jurusan" class="rounded-lg py-1 px-2">
+                </div>
+                <br>
+                <div class="flex flex-col">
+                    <label for="semester" class="pb-1 font-bold">Semester:</label>
+                    <input type="number" id="semester" name="semester" class="rounded-lg py-1 px-2">
+                </div>
+                <br>
                 
                 <button type="submit" class="rounded-lg bg-green-400 px-2 py-1 font-bold">Submit</button>
             </form>

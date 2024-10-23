@@ -36,6 +36,15 @@
                     </select>
                 </div>
                 <br>
+                <div class="flex flex-col">
+                    <label for="npm" class="pb-1 font-bold">Jurusan:</label>
+                    <input type="text" name="jurusan" id="jurusan" class="rounded-lg py-1 px-2" value="{{ old('npm', $user->jurusan) }}">
+                </div>
+                <br>
+                <div class="flex flex-col">
+                    <label for="npm" class="pb-1 font-bold">Semester:</label>
+                    <input type="text" name="semester" id="semester" class="rounded-lg py-1 px-2" value="{{ old('npm', $user->semester) }}">
+                </div>
                 
                 <button type="submit" class="rounded-lg bg-green-400 px-2 py-1 font-bold">Submit</button>
             </form>

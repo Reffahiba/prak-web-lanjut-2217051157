@@ -13,7 +13,7 @@ class UserModel extends Model
     protected $guarded = ['id'];
 
     protected $fillable = [
-        'nama', 'npm', 'kelas_id', 'foto',
+        'nama', 'npm', 'kelas_id', 'foto', 'jurusan', 'semester',
     ];
 
     public function kelas(){
