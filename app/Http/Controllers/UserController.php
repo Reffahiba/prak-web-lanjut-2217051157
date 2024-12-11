@@ -116,7 +116,7 @@ class UserController extends Controller
         if ($request->hasFile('foto')) {
             $foto = $request->file('foto');
             $filename = time() . '_' . $foto->getClientOriginalName();
-            $fotoPath = $foto->move(('upload/img'), $filename);
+            $foto->storeAs('uploads', $filename);
         } else {
             $fotoPath = null;
         }
@@ -125,9 +125,9 @@ class UserController extends Controller
             'nama' => $request->input('nama'),
             'npm' => $request->input('npm'),
             'kelas_id' => $request->input('kelas_id'),
-            'foto' => 'upload/img/' . $filename,
+            'foto' => $filename,
         ]);
 
-        return redirect()->to('/user')->with('success', 'User berhasil ditambahkan');
+        return redirect()->to('/')->with('success', 'User berhasil ditambahkan');
     }
 }

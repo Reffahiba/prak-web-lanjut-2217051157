@@ -20,6 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', [UserController::class, 'index'])->name('user.list');
 Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
 Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
