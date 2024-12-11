@@ -130,7 +130,6 @@ class UserController extends Controller
             'npm' => $request->input('npm'),
             'kelas_id' => $request->input('kelas_id'),
             'foto' => $filename,
-
             'jurusan' => $request->input('jurusan'),
             'semester' => $request->input('semester'),
         ]);
